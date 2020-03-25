@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProyectoGorra</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+</resources>
