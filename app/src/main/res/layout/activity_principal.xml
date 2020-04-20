@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verdemedio"
+    tools:context=".PrincipalActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BIENVENIDO A WIFI-CAP"
+            android:textAlignment="center"
+            android:textColor="@color/negro"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="80dp"
+            android:text="Modificar perfil"
+            android:textColor="@color/negro" />
+
+        <ImageButton
+            android:id="@+id/modificar"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="223dp"
+            android:layout_marginBottom="458dp"
+            android:background="@drawable/modificar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="-90dp"
+            android:text="Registrar Invidente"
+            android:textColor="@color/negro" />
+
+        <ImageButton
+            android:id="@+id/registro"
+            android:layout_width="116dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="235dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="230dp"
+            android:layout_marginBottom="458dp"
+            android:background="@drawable/invalido" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="325dp"
+            android:layout_marginEnd="-90dp"
+            android:text="Estado Gorra y Más"
+
+            android:textColor="@color/negro" />
+
+        <ImageButton
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/status" />
+
+        <TextView
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="325dp"
+            android:layout_marginEnd="80dp"
+            android:text="Agregar Contacto Emergencia"
+            android:textAlignment="center"
+            android:textColor="@color/negro" />
+
+        <ImageButton
+            android:id="@+id/contactos"
+            android:layout_width="129dp"
+            android:layout_height="121dp"
+            android:layout_gravity="center|left"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/contactos" />
+
+        <Button
+            android:id="@+id/btnCerrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="#1976d2"
+            android:backgroundTint="@color/negro"
+            android:text="Cerrar Sesión"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+</RelativeLayout>

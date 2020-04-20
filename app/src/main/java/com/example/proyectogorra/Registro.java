@@ -1,10 +1,10 @@
 package com.example.proyectogorra;
 
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Region;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +19,7 @@ import org.json.JSONObject;
 
 public class Registro extends AppCompatActivity implements View.OnClickListener {
 
-    EditText ednombre, edusuario,edpassword,edEdad;
+    EditText ednombre, edusuario,edpassword;
     Button btn_registrar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,6 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
         ednombre = findViewById(R.id.ed_nom);
         edusuario = findViewById(R.id.ed_usu);
         edpassword = findViewById(R.id.ed_pass);
-        edEdad = findViewById(R.id.ed_edad);
 
         btn_registrar = findViewById(R.id.btnregistrar);
         btn_registrar.setOnClickListener(this);
@@ -40,7 +39,6 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
         final String name = ednombre.getText().toString();
         final String username = edusuario.getText().toString();
         final String password = edpassword.getText().toString();
-        final int age = Integer.parseInt(edEdad.getText().toString());
 
         Response.Listener<String> responseListener = new Response.Listener<String>() {
             @Override
@@ -63,8 +61,9 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
             }
         };
 
-        RegisterRequest registerRequest = new RegisterRequest(name,username,age,password,responseListener);
+        RegistroRequest registerRequest = new RegistroRequest(name,username,password,responseListener);
         RequestQueue queue = Volley.newRequestQueue(Registro.this);
         queue.add(registerRequest);
     }
 }
+

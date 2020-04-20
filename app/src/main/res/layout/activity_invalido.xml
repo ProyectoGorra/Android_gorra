@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registro">
+    tools:context=".InvalidoActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -14,14 +14,14 @@
             android:id="@+id/imageView"
             android:layout_width="151dp"
             android:layout_height="113dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="55dp"
             android:layout_gravity="center|top"
             app:srcCompat="@drawable/registrarse" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CREA UN USUARIO"
+            android:text="Registra a tu Invidente"
             android:textSize="30dp"
             android:textAlignment="center"
             />
@@ -34,35 +34,42 @@
             android:gravity="center"
             android:orientation="vertical">
             <EditText
-                android:id="@+id/ed_nom"
+                android:id="@+id/ed_nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nombre"
+                android:hint="Nombre del Invidente"
                 android:inputType="text"
                 />
             <EditText
-                android:id="@+id/ed_usu"
+                android:id="@+id/ed_apellidos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Usuario"
+                android:hint="Apellidos de Invidente"
                 android:inputType="text"
                 />
             <EditText
-                android:id="@+id/ed_pass"
+                android:id="@+id/ed_edad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Contraseña"
+                android:hint="Edad"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/ed_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Direccion"
                 android:inputType="text"
                 />
             <Button
-                android:id="@+id/btnregistrar"
+                android:id="@+id/btnregistrarinv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="15dp"
                 android:background="#1976d2"
-                android:text="Registrarse"
+                android:text="Registrar Invalido"
                 android:textColor="#FFF"
                 android:backgroundTint="@color/negro"
                 android:textSize="18sp"
