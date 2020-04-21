@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -32,6 +33,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
 
         btn_registrar = findViewById(R.id.btnregistrar);
         btn_registrar.setOnClickListener(this);
+
     }
 
     @Override
@@ -47,8 +49,10 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
                     JSONObject jsonResponse = new JSONObject(response);
                     boolean success = jsonResponse.getBoolean("success");
                     if (success){
-                        Intent intent = new Intent(Registro.this,MainActivity.class);
-                        Registro.this.startActivity(intent);
+                        Intent intent = new Intent(Registro.this,PrincipalActivity.class);
+                        Toast.makeText(Registro.this,"Registro Exitoso",Toast.LENGTH_SHORT).show();
+                        startActivity(intent);
+                        finish();
                     }else {
                         AlertDialog.Builder builder = new AlertDialog.Builder(Registro.this);
                         builder.setMessage("Error en el registro")

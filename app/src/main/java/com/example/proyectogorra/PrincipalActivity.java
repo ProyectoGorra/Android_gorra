@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class PrincipalActivity extends AppCompatActivity {
 
@@ -34,6 +35,8 @@ public class PrincipalActivity extends AppCompatActivity {
                 preferences.edit().clear().apply();
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
+                Toast toast = Toast.makeText(getApplicationContext(),"Sesion Cerrada",Toast.LENGTH_SHORT);
+                toast.show();
                 finish();
             }
         });
@@ -42,6 +45,14 @@ public class PrincipalActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentreg = new Intent(getApplicationContext(),InvalidoActivity.class);
                 startActivity(intentreg);
+            }
+        });
+
+        btnstatus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentstatus = new Intent(getApplicationContext(),MasopcionesActivity.class);
+                startActivity(intentstatus);
             }
         });
     }

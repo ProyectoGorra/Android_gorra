@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentreg = new Intent(MainActivity.this,Registro.class);
                 MainActivity.this.startActivity(intentreg);
+                finish();
             }
         });
         }
