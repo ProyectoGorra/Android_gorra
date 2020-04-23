@@ -49,6 +49,7 @@ public class InvalidoActivity extends AppCompatActivity implements View.OnClickL
                             boolean success = jsonResponse.getBoolean("success");
                             if (success){
                                 Intent intent = new Intent(InvalidoActivity.this,PrincipalActivity.class);
+                                Toast.makeText(InvalidoActivity.this,"Registro Exitoso",Toast.LENGTH_SHORT).show();
                                 InvalidoActivity.this.startActivity(intent);
 
                                 finish();

@@ -55,5 +55,12 @@ public class PrincipalActivity extends AppCompatActivity {
                 startActivity(intentstatus);
             }
         });
+        btncontacto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentcont = new Intent(getApplicationContext(),RegistroContacto.class);
+                startActivity(intentcont);
+            }
+        });
     }
 }

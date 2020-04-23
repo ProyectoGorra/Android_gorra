@@ -22,31 +22,12 @@
             android:layout_marginTop="10dp"
             android:textStyle="italic" />
 
-        <TextView
-            android:layout_width="109dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|top"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="80dp"
-            android:text="Modificar perfil"
-            android:textColor="@color/negro" />
-
-        <ImageButton
-            android:id="@+id/modificar"
-            android:layout_width="wrap_content"
-            android:layout_height="110dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="120dp"
-            android:layout_marginEnd="223dp"
-            android:layout_marginBottom="458dp"
-            android:background="@drawable/modificar" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|top"
             android:layout_marginTop="100dp"
-            android:layout_marginEnd="-90dp"
             android:text="Registrar Invidente"
             android:textColor="@color/negro" />
 
@@ -54,7 +35,7 @@
             android:id="@+id/registro"
             android:layout_width="116dp"
             android:layout_height="108dp"
-            android:layout_marginStart="235dp"
+            android:layout_marginStart="150dp"
             android:layout_marginTop="120dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="458dp"
@@ -83,9 +64,9 @@
             android:layout_width="174dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center|top"
-            android:layout_marginTop="295dp"
-            android:layout_marginEnd="80dp"
-            android:text="Agregar Contacto Emergencia"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="85dp"
+            android:text="Contactos"
             android:textAlignment="center"
             android:textColor="@color/negro" />
 

@@ -31,7 +31,7 @@
             android:textColor="@color/negro" />
 
         <ImageButton
-            android:id="@+id/modificar"
+            android:id="@+id/lista"
             android:layout_width="wrap_content"
             android:layout_height="128dp"
             android:layout_gravity="center|left"
@@ -50,7 +50,7 @@
             />
 
         <ImageButton
-            android:id="@+id/registro"
+            android:id="@+id/gorra"
             android:layout_width="116dp"
             android:layout_height="108dp"
             android:layout_marginStart="235dp"

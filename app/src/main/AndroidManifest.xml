@@ -17,7 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".MasopcionesActivity"></activity>
+        <activity android:name=".GorraActivity"></activity>
+        <activity android:name=".RegistroContacto" />
+        <activity android:name=".ListaActivity" />
+        <activity
+            android:name=".MasopcionesActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".InvalidoActivity"
             android:screenOrientation="portrait" />
